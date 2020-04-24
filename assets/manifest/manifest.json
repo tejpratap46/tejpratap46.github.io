@@ -1,0 +1,17 @@
+{
+  "lang": "en",
+  "background_color": "#ffffff",
+  "theme_color": "#4582ec",
+  "name": "Tej Pratap Singh",
+  "short_name": "Tej Pratap Singh",
+  "display": "standalone",
+  "start_url": "/",
+  "permissions": [],
+  "icons": [
+    {
+      "src": "/assets/images/favicon.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    }
+  ]
+}
