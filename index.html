@@ -34,6 +34,8 @@
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet" />
     <!-- https://emoji-css.afeld.me/ -->
 
+    <link rel="stylesheet" href="/assets/css/tooltip.css">
+
     <link
       rel="shortcut icon"
       href="https://me.tejpratapsingh.com/assets/images/favicon.png"
@@ -75,7 +77,7 @@
     <div class="container">
       <div class="hero is-full-screen">
         <div class="logo is-center is-vertical-align">
-          <img src="/assets/images/tps.svg" alt="" />
+          <a href="/#"><img src="/assets/images/tps.svg" alt="" /></a>
           <h3>
             I am a
             <i
@@ -92,30 +94,35 @@
             ><strong>Web</strong> developer
           </h3>
           <span>
-            <a href="mailto:email@tejpratapsingh.com" target="_blank">
+            <a class="tooltip" href="mailto:email@tejpratapsingh.com" target="_blank">
                 <i
                 class="em-svg em-email"
                 aria-role="presentation"
                 aria-label="ENVELOPE"
               ></i>
+              <span class="tooltiptext">email</span>
             </a>
             &nbsp;
-            <a href="https://github.com/tejpratap46" target="_blank">
+            <a class="tooltip" href="https://github.com/tejpratap46" target="_blank">
                 <i class="em" style="background-image: url(https://github.githubassets.com/images/icons/emoji/octocat.png)"></i>
+                <span class="tooltiptext">github</span>
             </a>
             &nbsp;
-            <a href="https://twitter.com/_tejpratap" target="_blank">
+            <a class="tooltip" href="https://twitter.com/_tejpratap" target="_blank">
                 <i class="em em-bird" aria-role="presentation" aria-label="BIRD"></i>
+                <span class="tooltiptext">twitter</span>
             </a>
             &nbsp;
-            <a href="https://blog.tejpratapsingh.com" target="_blank">
+            <a class="tooltip" href="https://blog.tejpratapsingh.com" target="_blank">
               <i class="em em-book" aria-role="presentation" aria-label="OPEN BOOK"></i>
+              <span class="tooltiptext">blog</span>
             </a>
             &nbsp;
             |
             &nbsp;
-            <a href="https://resume.tej.workers.dev" target="_blank">
+            <a class="tooltip" href="https://resume.tej.workers.dev" target="_blank">
               <i class="em em-clipboard" aria-role="presentation" aria-label="CLIPBOARD"></i>
+              <span class="tooltiptext">resume</span>
             </a>
           </span>
         </div>
