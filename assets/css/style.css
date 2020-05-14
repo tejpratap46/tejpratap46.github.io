@@ -1,0 +1,50 @@
+body {
+    overflow-x: hidden;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    flex: 1;
+    flex-direction: column;
+}
+
+.logo svg {
+    width: 100%;
+    max-width: 300px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.highlight {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 3px;
+    text-decoration: none;
+    color: #4582ec !important;
+    box-shadow: inset 0 -3px 0 #4582ec;
+}
+
+.highlight:hover {
+    -webkit-box-shadow: inset 0 -33px 0 0 #4582ec;
+    box-shadow: inset 0 -33px 0 0 #4582ec;
+    color: #fff !important;
+}
