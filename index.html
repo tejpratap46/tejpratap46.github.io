@@ -758,6 +758,9 @@
     </body>
 
     <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/assets/script/sw.js");
+        }
         // https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fblog.tejpratapsingh.com%2Frss.xml
         fetch(
             "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fblog.tejpratapsingh.com%2Frss.xml"
