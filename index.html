@@ -868,7 +868,7 @@
                 "scroll",
                 function() {
                     var navbarClassList = elementNavBarFixed.classList;
-                    var y = window.scrollY + 10;
+                    var y = window.scrollY;
 
                     if (
                         y > navbarTopOffset &&
@@ -893,6 +893,7 @@
                     navbarFixedSkills.classList.remove("active");
                     navbarFixedAbout.classList.remove("active");
 
+                    y = y + 10;
                     if (y >= contactTopOffset) {
                         navbarFixedContact.classList.add("active");
                     } else if (y >= blogTopOffset) {
