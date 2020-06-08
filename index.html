@@ -66,6 +66,18 @@
         <title>Tej Pratap Singh</title>
     </head>
     <body style="padding-bottom: 100px; overflow-x: hidden;">
+        <nav
+            id="navbarFixed"
+            class="tabs is-center is-fixed is-hidden"
+            style="overflow-x: auto; background-color: white; z-index: 2;"
+        >
+            <a href="#about" class="bold">About</a>
+            <a href="#skills" class="bold">Skills</a>
+            <a href="#work" class="bold">Work</a>
+            <a href="#projects" class="bold">Projects</a>
+            <a href="#blog" class="bold">Blog</a>
+            <a href="#contact" class="bold">Contact</a>
+        </nav>
         <div class="container">
             <div class="hero is-full-screen">
                 <div class="logo is-center is-vertical-align">
@@ -151,7 +163,11 @@
                         </a>
                     </span>
                 </div>
-                <nav class="tabs is-center" style="overflow-x: auto;">
+                <nav
+                    id="navbar"
+                    class="tabs is-center"
+                    style="overflow-x: auto;"
+                >
                     <a href="#about" class="bold">About</a>
                     <a href="#skills" class="bold">Skills</a>
                     <a href="#work" class="bold">Work</a>
@@ -801,5 +817,32 @@
                     '<br /><div style="padding: 10px;"></div>'
                 );
             });
+
+        var navbarTopOffset = document.getElementById("navbar").offsetTop;
+        var elementNavBarFixed = document.getElementById("navbarFixed");
+
+        window.addEventListener("scroll", function() {
+            var navbarClassList = elementNavBarFixed.classList;
+            var y = window.scrollY;
+            if (y > navbarTopOffset) {
+                if (navbarClassList.contains("is-hidden") == false) {
+                    return;
+                }
+                document
+                    .getElementById("navbarFixed")
+                    .classList.remove("is-hidden");
+
+                console.log("navbarFixed");
+            } else {
+                if (navbarClassList.contains("is-hidden")) {
+                    return;
+                }
+                document
+                    .getElementById("navbarFixed")
+                    .classList.add("is-hidden");
+
+                console.log("navbarFixed");
+            }
+        });
     </script>
 </html>
