@@ -71,12 +71,14 @@
             class="tabs is-center is-fixed is-hidden"
             style="overflow-x: auto; background-color: white; z-index: 2;"
         >
-            <a href="#about" class="bold">About</a>
-            <a href="#skills" class="bold">Skills</a>
-            <a href="#work" class="bold">Work</a>
-            <a href="#projects" class="bold">Projects</a>
-            <a href="#blog" class="bold">Blog</a>
-            <a href="#contact" class="bold">Contact</a>
+            <a id="navbarFixedAbout" href="#about" class="bold">About</a>
+            <a id="navbarFixedSkills" href="#skills" class="bold">Skills</a>
+            <a id="navbarFixedWork" href="#work" class="bold">Work</a>
+            <a id="navbarFixedProjects" href="#projects" class="bold"
+                >Projects</a
+            >
+            <a id="navbarFixedBlog" href="#blog" class="bold">Blog</a>
+            <a id="navbarFixedContact" href="#contact" class="bold">Contact</a>
         </nav>
         <div class="container">
             <div class="hero is-full-screen">
@@ -759,7 +761,7 @@
 
             <div style="padding: 10px;"></div>
 
-            <section class="is-center" id="contact">
+            <section class="is-center">
                 <span
                     >Made Using
                     <a href="https://jenil.github.io/chota" target="_blank"
@@ -816,29 +818,97 @@
                 ).innerHTML = blogData.join(
                     '<br /><div style="padding: 10px;"></div>'
                 );
+
+                listenToScroll();
             });
 
-        var navbarTopOffset = document.getElementById("navbar").offsetTop;
-        var elementNavBarFixed = document.getElementById("navbarFixed");
+        function listenToScroll() {
+            var navbarTopOffset = document.getElementById("navbar").offsetTop;
+            var elementNavBarFixed = document.getElementById("navbarFixed");
 
-        window.addEventListener("scroll", function() {
-            var navbarClassList = elementNavBarFixed.classList;
-            var y = window.scrollY;
-            if (y > navbarTopOffset) {
-                if (navbarClassList.contains("is-hidden") == false) {
-                    return;
-                }
-                document
-                    .getElementById("navbarFixed")
-                    .classList.remove("is-hidden");
-            } else {
-                if (navbarClassList.contains("is-hidden")) {
-                    return;
-                }
-                document
-                    .getElementById("navbarFixed")
-                    .classList.add("is-hidden");
+            var navbarFixedAbout = document.getElementById("navbarFixedAbout");
+            var aboutTopOffset = document.getElementById("about").offsetTop;
+
+            var navbarFixedSkills = document.getElementById(
+                "navbarFixedSkills"
+            );
+            var skillsTopOffset = document.getElementById("skills").offsetTop;
+
+            var navbarFixedWork = document.getElementById("navbarFixedWork");
+            var workTopOffset = document.getElementById("work").offsetTop;
+
+            var navbarFixedProjects = document.getElementById(
+                "navbarFixedProjects"
+            );
+            var projectsTopOffset = document.getElementById("projects")
+                .offsetTop;
+
+            var navbarFixedBlog = document.getElementById("navbarFixedBlog");
+            var blogTopOffset = document.getElementById("blog").offsetTop;
+
+            var navbarFixedContact = document.getElementById(
+                "navbarFixedContact"
+            );
+            var contactTopOffset = document.getElementById("contact").offsetTop;
+
+            var supportsPassive = false;
+            try {
+                var opts = Object.defineProperty({}, "passive", {
+                    get: function() {
+                        supportsPassive = true;
+                    }
+                });
+                window.addEventListener("testPassive", null, opts);
+                window.removeEventListener("testPassive", null, opts);
+            } catch (e) {
+                console.log(e);
             }
-        });
+
+            window.addEventListener(
+                "scroll",
+                function() {
+                    var navbarClassList = elementNavBarFixed.classList;
+                    var y = window.scrollY;
+
+                    if (
+                        y > navbarTopOffset &&
+                        navbarClassList.contains("is-hidden")
+                    ) {
+                        document
+                            .getElementById("navbarFixed")
+                            .classList.remove("is-hidden");
+                    } else if (
+                        y <= navbarTopOffset &&
+                        navbarClassList.contains("is-hidden") == false
+                    ) {
+                        document
+                            .getElementById("navbarFixed")
+                            .classList.add("is-hidden");
+                    }
+
+                    navbarFixedContact.classList.remove("active");
+                    navbarFixedBlog.classList.remove("active");
+                    navbarFixedProjects.classList.remove("active");
+                    navbarFixedWork.classList.remove("active");
+                    navbarFixedSkills.classList.remove("active");
+                    navbarFixedAbout.classList.remove("active");
+
+                    if (y > contactTopOffset) {
+                        navbarFixedContact.classList.add("active");
+                    } else if (y > blogTopOffset) {
+                        navbarFixedBlog.classList.add("active");
+                    } else if (y > projectsTopOffset) {
+                        navbarFixedProjects.classList.add("active");
+                    } else if (y > workTopOffset) {
+                        navbarFixedWork.classList.add("active");
+                    } else if (y > skillsTopOffset) {
+                        navbarFixedSkills.classList.add("active");
+                    } else if (y > aboutTopOffset) {
+                        navbarFixedAbout.classList.add("active");
+                    }
+                },
+                supportsPassive ? { passive: true } : false
+            );
+        }
     </script>
 </html>
