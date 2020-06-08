@@ -868,7 +868,7 @@
                 "scroll",
                 function() {
                     var navbarClassList = elementNavBarFixed.classList;
-                    var y = window.scrollY;
+                    var y = window.scrollY + 2;
 
                     if (
                         y > navbarTopOffset &&
@@ -893,17 +893,17 @@
                     navbarFixedSkills.classList.remove("active");
                     navbarFixedAbout.classList.remove("active");
 
-                    if (y > contactTopOffset) {
+                    if (y >= contactTopOffset) {
                         navbarFixedContact.classList.add("active");
-                    } else if (y > blogTopOffset) {
+                    } else if (y >= blogTopOffset) {
                         navbarFixedBlog.classList.add("active");
-                    } else if (y > projectsTopOffset) {
+                    } else if (y >= projectsTopOffset) {
                         navbarFixedProjects.classList.add("active");
-                    } else if (y > workTopOffset) {
+                    } else if (y >= workTopOffset) {
                         navbarFixedWork.classList.add("active");
-                    } else if (y > skillsTopOffset) {
+                    } else if (y >= skillsTopOffset) {
                         navbarFixedSkills.classList.add("active");
-                    } else if (y > aboutTopOffset) {
+                    } else if (y >= aboutTopOffset) {
                         navbarFixedAbout.classList.add("active");
                     }
                 },
