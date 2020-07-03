@@ -52,6 +52,17 @@ ul {
     color: #fff !important;
 }
 
+.border-left {
+    transition: all 0.2s ease-in-out;
+    border-left: 16px solid #4582ec;
+    padding-left: 8px;
+}
+
+.border-left:hover {
+    box-shadow: inset 0 0 100px 0 #4582ec;
+    color: #fff !important;
+}
+
 /* ENDLESS ROTATE */
 .animate_rotate {
     animation: rotate 5s linear infinite;
