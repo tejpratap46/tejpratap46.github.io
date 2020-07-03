@@ -3,7 +3,7 @@ exports.handler = function(event, context, callback) {
     callback(null, {
         statusCode: 301,
         headers: {
-            Location: "https://resume.tej.workers.dev"
+            Location: "https://me.tejpratapsingh.com/assets/images/cover.png"
         }
     });
 };
