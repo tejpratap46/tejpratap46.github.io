@@ -1,8 +1,7 @@
-import monk from 'monk';
-
 exports.handler = async (event, context) => {
     // Call at: https://me.tejpratapsingh.com/.netlify/functions/pixel: wpkMNtwF2XzUpapz
-
+    import monk from 'monk';
+    
     const { DB_URL } = process.env;
     const db = monk(DB_URL);
 
