@@ -1,5 +1,4 @@
-const monk = require('monk');
-const { nanoid } = require('nanoid');
+import monk from 'monk';
 
 exports.handler = async (event, context) => {
     // Call at: https://me.tejpratapsingh.com/.netlify/functions/pixel: wpkMNtwF2XzUpapz
@@ -20,7 +19,7 @@ exports.handler = async (event, context) => {
             url,
         });
         if (!slug) {
-            slug = nanoid(5);
+            throw Error('Slug is required');
         } else {
             const existing = await urls.findOne({ slug });
             if (existing) {
