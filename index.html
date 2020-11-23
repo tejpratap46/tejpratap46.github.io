@@ -25,13 +25,13 @@
 
     <link href="https://fonts.googleapis.com/css?family=Source%20Code%20Pro" rel="stylesheet" />
 
+    <!-- https://jenil.github.io/chota/#! -->
+    <link rel="stylesheet" href="/assets/css/chota.css" />
+
     <link rel="stylesheet" href="/assets/css/style.css" />
 
-    <link rel="stylesheet" href="/assets/css/chota.css" />
-    <!-- https://jenil.github.io/chota/#! -->
-
-    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet" />
     <!-- https://emoji-css.afeld.me/ -->
+    <link rel="stylesheet" href="https://emoji-css.afeld.me/emoji.css" />
 
     <link rel="stylesheet" href="/assets/css/tooltip.css" />
 
@@ -46,13 +46,13 @@
 
 <body style="padding-bottom: 100px; overflow-x: hidden;">
     <nav id="navbarFixed" class="tabs is-center is-fixed is-hidden"
-        style="overflow-x: auto; background-color: white; z-index: 2;">
-        <a id="navbarFixedAbout" href="#about">About</a>
-        <a id="navbarFixedSkills" href="#skills">Skills</a>
-        <a id="navbarFixedWork" href="#work">Work</a>
-        <a id="navbarFixedProjects" href="#projects">Projects</a>
-        <a id="navbarFixedBlog" href="#blog">Blog</a>
-        <a id="navbarFixedContact" href="#contact">Contact</a>
+        style="overflow-x: auto; background-color: var(--bg-color); z-index: 2;">
+        <a id="navbarFixedAbout" href="#about" style="color: var(--font-color);">About</a>
+        <a id="navbarFixedSkills" href="#skills" style="color: var(--font-color);">Skills</a>
+        <a id="navbarFixedWork" href="#work" style="color: var(--font-color);">Work</a>
+        <a id="navbarFixedProjects" href="#projects" style="color: var(--font-color);">Projects</a>
+        <a id="navbarFixedBlog" href="#blog" style="color: var(--font-color);">Blog</a>
+        <a id="navbarFixedContact" href="#contact" style="color: var(--font-color);">Contact</a>
     </nav>
     <div class="container">
         <div class="hero is-full-screen">
@@ -95,12 +95,12 @@
                 </span>
             </div>
             <nav id="navbar" class="tabs is-center" style="overflow-x: auto;">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#work">Work</a>
-                <a href="#projects">Projects</a>
-                <a href="#blog">Blog</a>
-                <a href="#contact">Contact</a>
+                <a href="#about" style="color: var(--font-color);">About</a>
+                <a href="#skills" style="color: var(--font-color);">Skills</a>
+                <a href="#work" style="color: var(--font-color);">Work</a>
+                <a href="#projects" style="color: var(--font-color);">Projects</a>
+                <a href="#blog" style="color: var(--font-color);">Blog</a>
+                <a href="#contact" style="color: var(--font-color);">Contact</a>
             </nav>
 
             <!-- <div class="hide-xs">
@@ -552,6 +552,11 @@
 </body>
 
 <script>
+    // Enable Dark Mode
+    if (window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.body.classList.add('dark');
+    }
     if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("/sw.js", {
             scope: "/"
