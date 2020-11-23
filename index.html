@@ -92,6 +92,14 @@
                         <i class="em em-clipboard" aria-role="presentation" aria-label="CLIPBOARD"></i>
                         <span class="tooltiptext">resume</span>
                     </a>
+                    &nbsp; | &nbsp;
+                    <a id="dark_mode" href="#" class="tooltip">
+                        <i id="dark_mode_disabled" class="em em-sunny" aria-role="presentation"
+                            aria-label="BLACK SUN WITH RAYS"></i>
+                        <i id="dark_mode_enabled" class="is-hidden em em-first_quarter_moon" aria-role="presentation"
+                            aria-label="FIRST QUARTER MOON SYMBOL"></i>
+                        <span class="tooltiptext">dark mode</span>
+                    </a>
                 </span>
             </div>
             <nav id="navbar" class="tabs is-center" style="overflow-x: auto;">
@@ -314,7 +322,9 @@
                     <br />
                     <span class="tag is-small text-success">iOS</span>
                     <div class="clearfix"></div>
-                    <a class="button outline primary" href="https://itunes.apple.com/in/app/ponto-local-commerce/id1350714016?ls=1&mt=8" style="margin-top: 8px;">Read More</a>
+                    <a class="button outline primary"
+                        href="https://itunes.apple.com/in/app/ponto-local-commerce/id1350714016?ls=1&mt=8"
+                        style="margin-top: 8px;">Read More</a>
                 </div>
             </div>
 
@@ -336,7 +346,8 @@
                     <span class="tag is-small text-success">ReactJS</span>
                     <span class="tag is-small text-success">Firebase</span>
                     <div class="clearfix"></div>
-                    <a class="button outline primary" href="https://link.tejpratapsingh.com" style="margin-top: 8px;">Read More</a>
+                    <a class="button outline primary" href="https://link.tejpratapsingh.com"
+                        style="margin-top: 8px;">Read More</a>
                 </div>
             </div>
 
@@ -365,7 +376,8 @@
                     <span class="tag is-small text-success">MongoDB</span>
                     <span class="tag is-small text-success">Redis</span>
                     <div class="clearfix"></div>
-                    <a class="button outline primary" href="https://tlj.herokuapp.com" style="margin-top: 8px;">Read More</a>
+                    <a class="button outline primary" href="https://tlj.herokuapp.com" style="margin-top: 8px;">Read
+                        More</a>
                 </div>
             </div>
 
@@ -388,7 +400,8 @@
                     <span class="tag is-small text-success">Parse Server</span>
                     <span class="tag is-small text-success">MongoDB</span>
                     <div class="clearfix"></div>
-                    <a class="button outline primary" href="https://www.invesys.in" style="margin-top: 8px;">Read More</a>
+                    <a class="button outline primary" href="https://www.invesys.in" style="margin-top: 8px;">Read
+                        More</a>
                 </div>
             </div>
 
@@ -552,11 +565,30 @@
 </body>
 
 <script>
+    var darkMode = document.getElementById("dark_mode");
+    var darkModeEnabled = document.getElementById("dark_mode_enabled");
+    var darkModeDisabled = document.getElementById("dark_mode_disabled");
     // Enable Dark Mode
     if (window.matchMedia &&
         window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.body.classList.add('dark');
+        document.body.classList.add('dark');
+        darkModeDisabled.classList.add('is-hidden');
+        darkModeEnabled.classList.remove('is-hidden');
     }
+
+    darkMode.addEventListener('click', function () {
+        var isDarkModeEnabled = document.body.classList.contains('dark');
+        if (isDarkModeEnabled) {
+            document.body.classList.remove('dark');
+            darkModeDisabled.classList.remove('is-hidden');
+            darkModeEnabled.classList.add('is-hidden');
+        } else {
+            document.body.classList.add('dark');
+            darkModeDisabled.classList.add('is-hidden');
+            darkModeEnabled.classList.remove('is-hidden');
+        }
+    });
+
     if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("/sw.js", {
             scope: "/"
