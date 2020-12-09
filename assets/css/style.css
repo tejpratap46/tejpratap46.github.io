@@ -30,6 +30,10 @@ body.dark {
     --color-darkGrey: #777;
 }
 
+body.dark section img {
+    filter: brightness(0.8);
+}
+
 section {
     scroll-margin-top: 48px;
 }
