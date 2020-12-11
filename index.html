@@ -579,7 +579,8 @@
         darkModeEnabled.classList.remove('is-hidden');
     }
 
-    darkMode.addEventListener('click', function () {
+    darkMode.addEventListener('click', function (e) {
+        e.preventDefault();
         var isDarkModeEnabled = document.body.classList.contains('dark');
         if (isDarkModeEnabled) {
             document.body.classList.remove('dark');
