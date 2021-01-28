@@ -606,6 +606,9 @@
 
     window.onload = function () {
         isDarkModeEnabled = localStorage.getItem("dark-mode");
+        if (!isDarkModeEnabled) {
+            return;
+        }
         isDarkModeEnabled = isDarkModeEnabled == "true";
         setDarkMode(isDarkModeEnabled);
     };
