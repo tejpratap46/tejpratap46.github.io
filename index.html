@@ -44,7 +44,7 @@
     <title>Tej Pratap Singh</title>
 </head>
 
-<body style="padding-bottom: 100px; overflow-x: hidden;">
+<body class="dark" style="padding-bottom: 100px; overflow-x: hidden;">
     <nav id="navbarFixed" class="tabs is-center is-fixed is-hidden"
         style="overflow-x: auto; background-color: var(--bg-color); z-index: 2;">
         <a id="navbarFixedAbout" href="#about" style="color: var(--font-color);">About</a>
@@ -403,7 +403,8 @@
                     <span class="tag is-small text-success">Parse Server</span>
                     <span class="tag is-small text-success">MongoDB</span>
                     <div class="clearfix"></div>
-                    <a class="button outline primary" href="https://www.invesys.in" style="margin-top: 8px;" target="_blank">Read
+                    <a class="button outline primary" href="https://www.invesys.in" style="margin-top: 8px;"
+                        target="_blank">Read
                         More</a>
                 </div>
             </div>
@@ -579,25 +580,58 @@
         darkModeEnabled.classList.remove('is-hidden');
     }
 
+    var isDarkModeEnabled = localStorage.getItem("dark-mode");
+    isDarkModeEnabled = isDarkModeEnabled == "true";
+
+    // Click to enable or disable dark mode
     darkMode.addEventListener('click', function (e) {
         e.preventDefault();
-        var isDarkModeEnabled = document.body.classList.contains('dark');
-        if (isDarkModeEnabled) {
-            document.body.classList.remove('dark');
-            darkModeDisabled.classList.remove('is-hidden');
-            darkModeEnabled.classList.add('is-hidden');
-        } else {
-            document.body.classList.add('dark');
-            darkModeDisabled.classList.add('is-hidden');
-            darkModeEnabled.classList.remove('is-hidden');
+        isDarkModeEnabled = !isDarkModeEnabled;
+        localStorage.setItem("dark-mode", isDarkModeEnabled);
+        setDarkMode(isDarkModeEnabled);
+    });
+    // Listen to live changes
+    window.addEventListener('storage', function (e) {
+        console.log("Storage event");
+        console.log(e);
+        if (e.storageArea !== localStorage) {
+            return;
+        }
+
+        if (e.key === "dark-mode") {
+            var isDarkModeEnabled = e.newValue;
+            setDarkMode(isDarkModeEnabled);
         }
     });
 
+    window.onload = function () {
+        isDarkModeEnabled = localStorage.getItem("dark-mode");
+        isDarkModeEnabled = isDarkModeEnabled == "true";
+        setDarkMode(isDarkModeEnabled);
+    };
+
+    function setDarkMode(isDarkModeEnabled) {
+        if (isDarkModeEnabled) {
+            console.log('adding dark class');
+            document.body.classList.add('dark');
+            darkModeDisabled.classList.add('is-hidden');
+            darkModeEnabled.classList.remove('is-hidden');
+        } else {
+            console.log('removing dark class');
+            document.body.classList.remove('dark');
+            darkModeDisabled.classList.remove('is-hidden');
+            darkModeEnabled.classList.add('is-hidden');
+        }
+    }
+
+    // Enable Service Worker
     if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("/sw.js", {
             scope: "/"
         });
     }
+
+    // get Latest blog posts
     // https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fblog.tejpratapsingh.com%2Frss.xml
     fetch(
         "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fblog.tejpratapsingh.com%2Frss.xml"
