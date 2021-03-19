@@ -1,7 +1,10 @@
 const http = require('https');
-// Call at: https://me.tejpratapsingh.com/.netlify/functions/hello
+// Call at: https://me.tejpratapsingh.com/.netlify/functions/proxy?url=me.tejpratapsingh.com/.netlify/functions/echo
 exports.handler = async (event) => {
     const queryParameters = event.queryStringParameters;
+    const httpMethod = event.httpMethod;
+    const body = event.body ? JSON.parse(event.body) : {};
+
     const url = queryParameters.url;
     if (!url) {
         const response = {
@@ -21,8 +24,9 @@ exports.handler = async (event) => {
     });
 };
 function httprequest(url) {
-    const host = utl.split("/")[0];
-    const path = utl.split("/")[1];
+    const urlArray = url.split("/");
+    const host = fruits.shift();
+    const path = urlArray.join("/");
     return new Promise((resolve, reject) => {
         const options = {
             host: host,
