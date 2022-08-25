@@ -52,8 +52,8 @@ const links = [
 		),
 	},
 	{
-		label: 'Story',
-		href: '/story',
+		label: 'Work',
+		href: '/work',
 		icon: (
 			<svg
 				viewBox='0 0 15 15'
@@ -70,8 +70,8 @@ const links = [
 		),
 	},
 	{
-		label: 'Recipes',
-		href: '/recipes',
+		label: 'Contact',
+		href: '/contact',
 		icon: (
 			<svg
 				viewBox='0 0 15 15'
