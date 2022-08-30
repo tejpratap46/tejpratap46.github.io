@@ -27,7 +27,7 @@ const Page = ({ title, children }: Props) => (
 			<div className='p-6'>{children}</div>
 		</main>
 
-		<BottomNav />
+		{/* <BottomNav /> */}
 	</>
 )
 
