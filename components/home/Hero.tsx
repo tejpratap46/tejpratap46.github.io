@@ -15,10 +15,10 @@ const Hero = () => (
 							target='_blank'
 							rel='noreferrer'
 							className='inline-flex items-center py-2 px-4 text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700'>
-							<svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-at" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-								<circle cx="12" cy="12" r="4"></circle>
-								<path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28"></path>
+							<svg xmlns='http://www.w3.org/2000/svg' className='icon icon-tabler icon-tabler-at' width='24' height='24' viewBox='0 0 24 24' strokeWidth='2' stroke='currentColor' fill='none' strokeLinecap='round' strokeLinejoin='round'>
+								<path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+								<circle cx='12' cy='12' r='4'></circle>
+								<path d='M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28'></path>
 							</svg>
 						</a>
 						<a href='https://github.com/tejpratap46'
@@ -39,7 +39,20 @@ const Hero = () => (
 								<path d='M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z'></path>
 							</svg>
 						</a>
-						<a href='https://blog.tejpratapsingh.com'
+						<a href='https://www.linkedin.com/in/tejpr'
+							target='_blank'
+							rel='noreferrer'
+							className='inline-flex items-center py-2 px-4 text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700'>
+							<svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+								<rect x="4" y="4" width="16" height="16" rx="2"></rect>
+								<line x1="8" y1="11" x2="8" y2="16"></line>
+								<line x1="8" y1="8" x2="8" y2="8.01"></line>
+								<line x1="12" y1="16" x2="12" y2="11"></line>
+								<path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+							</svg>
+						</a>
+						{/* <a href='https://blog.tejpratapsingh.com'
 							target='_blank'
 							rel='noreferrer'
 							className='inline-flex items-center py-2 px-4 text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700'>
@@ -51,18 +64,34 @@ const Hero = () => (
 								<line x1='12' y1='6' x2='12' y2='19'></line>
 								<line x1='21' y1='6' x2='21' y2='19'></line>
 							</svg>
-						</a>
+						</a> */}
 					</div>
 					<br />
-					<a href="#" className="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-						<svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-align-justified" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-							<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-							<line x1="4" y1="6" x2="20" y2="6"></line>
-							<line x1="4" y1="12" x2="20" y2="12"></line>
-							<line x1="4" y1="18" x2="16" y2="18"></line>
-						</svg>
-						<span>&nbsp;RESUME</span>
-					</a>
+					<div className='flex space-x-3'>
+						<a href='https://resume.tej.workers.dev'
+							target='_blank'
+							rel='noreferrer'
+							className='inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
+							<svg xmlns='http://www.w3.org/2000/svg' className='icon icon-tabler icon-tabler-align-justified' width='24' height='24' viewBox='0 0 24 24' strokeWidth='2' stroke='currentColor' fill='none' strokeLinecap='round' strokeLinejoin='round'>
+								<path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+								<line x1='4' y1='6' x2='20' y2='6'></line>
+								<line x1='4' y1='12' x2='20' y2='12'></line>
+								<line x1='4' y1='18' x2='16' y2='18'></line>
+							</svg>
+							<span>&nbsp;RESUME</span>
+						</a>
+						<a href='https://docs.google.com/document/d/1A-dKNJR3OFDE1VyCmk98EFdQjCJllHk7IPDs-AhLhWU/export?format=pdf'
+							target='_blank'
+							rel='noreferrer'
+							className='inline-flex items-center py-2 px-4 text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700'>
+							<svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-download" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+								<path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
+								<polyline points="7 11 12 16 17 11"></polyline>
+								<line x1="12" y1="4" x2="12" y2="16"></line>
+							</svg>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
