@@ -10,7 +10,7 @@ const Work = () => (
 				<h3 className='text-lg font-semibold text-gray-700 dark:text-gray-300'>Tata Elxsi</h3>
 				<h5 className='text-xs font-semibold text-gray-600 dark:text-gray-400 mb-4'>Specialist</h5>
 				<p className='mb-4 text-base font-normal text-gray-500 dark:text-gray-100'>
-					Building Automotive Infotaintment Systems for Modern Cars with Android Automotive.
+					Building Automotive Infotainment Systems for Modern Cars with Android Automotive.
 					<br />
 					<span className='text-sm'>- Create, Build and Deploy Apps on Automotive AOSP images.</span>
 				</p>
