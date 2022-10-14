@@ -25,6 +25,16 @@ const sideProjectList = [
 		name: 'RecyclerCalendar Android',
 		description: 'A simple DIY library to generate your own custom Calendar View using RecyclerView, written in Kotlin',
 		url: 'https://github.com/tejpratap46/RecyclerCalendarAndroid'
+	},
+	{
+		name: 'Google-Drive-REST-Android',
+		description: 'A simple wrapper around Google Drive REST API using OKHTTP.',
+		url: 'https://github.com/tejpratap46/Google-Drive-REST-Android'
+	},
+	{
+		name: 'Link Analytics',
+		description: 'Create a short link and track its analytics. Links can be a simple URL shortener with analytics or Pixel tracker for images.',
+		url: 'https://link.tejpratapsingh.com/'
 	}
 ]
 
