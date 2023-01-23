@@ -17,6 +17,9 @@ const BlogList = (props: BlogListProps) => {
 					</a>
 				})
 			}
+			<a href={'https://blog.tejpratapsingh.com'} target='_blank' rel='noreferrer' className="block p-4 mt-4 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+				<h4 className="mb-2 text-4xl text-center font-bold tracking-tight text-gray-900 dark:text-white">Read More</h4>
+			</a>
 		</>
 	)
 }
