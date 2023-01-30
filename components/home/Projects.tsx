@@ -48,6 +48,11 @@ const sideProjectList = [
 		name: 'Wake You',
 		description: 'Keep your system awake, don\'t let it sleep with a simple Web App.',
 		url: 'https://wake.tejpratapsingh.com/'
+	},
+	{
+		name: 'Video Toolkit',
+		description: 'Simple video player with slow-motion capability',
+		url: 'https://video.tejpratapsingh.com/'
 	}
 ]
 
