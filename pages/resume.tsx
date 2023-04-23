@@ -1,9 +1,11 @@
 const Resume = () => (
-	<div className="container mx-auto">
-		<h1 className="text-4xl">Tej Pratap Singh</h1>
-		<h5 className="text-lg">Web and Mobile App Developer</h5>
+	<main
+		className='mx-auto max-w-screen-md pt-8 pb-8 px-safe sm:pb-0'
+	>
+		<h1 className="text-4xl font-serif font-medium">Tej Pratap Singh</h1>
+		<h5 className="text-lg mt-3">Web and Mobile App Developer</h5>
 
-		<nav className="flex">
+		<nav className="flex mt-2">
 			<ol className="inline-flex items-center space-x-1 md:space-x-3">
 				<li className="inline-flex items-center">
 					<a href="mailto:tejpratap46@gmail.com" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
@@ -42,13 +44,28 @@ const Resume = () => (
 			</ol>
 		</nav>
 
-		<div className="grid grid-cols-3 gap-4">
+		<div className="grid grid-cols-3 gap-4 mt-8">
 			<div className="col-span-2">
 				<h3 className="text-2xl">Relavent Experience</h3>
+				<br />
+				<p>
+					<strong>Specialist</strong>
+					<span> @ TATA Elxsi</span>
+				</p>
+				<p>
+					<small>2022 - Present // Pune, Maharashtra</small>
+				</p>
+				<ul>
+					<li>Building Automotive Infotainment Systems for Modern Cars with Android Automotive.</li>
+					<li>Building Automotive Infotainment Systems for Modern Cars with Android Automotive.</li>
+				</ul>
 			</div>
-			<div className="">05</div>
+			<div className="">
+				<h3 className="text-2xl">Skills</h3>
+				<br />
+			</div>
 		</div>
-	</div>
+	</main>
 )
 
 export default Resume

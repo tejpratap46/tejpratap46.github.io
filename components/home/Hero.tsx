@@ -6,7 +6,7 @@ const Hero = () => (
 		<div className='grid h-screen-safe place-items-center'>
 			<div className='w-full max-w-sm rounded-lg'>
 				<div className='flex flex-col items-center p-10'>
-					<Image className='mb-3 w-24 h-24 rounded-full shadow-lg grayscale hover:filter-none transition ease-in-out duration-500' src={'/images/avatar.png'} width={220} height={220} alt='Bonnie image' />
+					<Image className='mb-3 w-24 h-24 rounded-full shadow-lg grayscale hover:filter-none transition ease-in-out duration-500' src={'/images/avatar.png'} width={240} height={240} alt='Bonnie image' />
 					<h4 className='mb-1 mt-8 text-2xl font-medium text-gray-900 dark:text-white'>Tej Pratap Singh</h4>
 					<span className='text-sm text-gray-500 dark:text-gray-400'>Software Developer</span>
 					<span className='text-sm text-gray-800 dark:text-gray-200'>Specialist @Tata Elxsi</span>

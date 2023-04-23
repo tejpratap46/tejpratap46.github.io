@@ -14,7 +14,7 @@ const Appbar = () => {
 				<div className='mx-auto flex h-20 max-w-screen-md items-center justify-between px-6'>
 					<Link href='/'>
 						<a>
-							<h1 className='font-medium'>Tej Pratap Singh</h1>
+							<h1 className='text-2xl font-medium font-serif'>Tej Pratap Singh</h1>
 						</a>
 					</Link>
 
@@ -38,7 +38,7 @@ const Appbar = () => {
 						</div>
 
 						<div
-							className='h-10 w-10 rounded-full bg-zinc-200 bg-cover bg-center shadow-inner dark:bg-zinc-800 grayscale hover:filter-none transition ease-in-out duration-500'
+							className='h-10 w-10 rounded-full bg-zinc-200 bg-cover bg-center shadow-inner dark:bg-zinc-800'
 							style={{
 								backgroundImage:
 									'url(/images/favicon.png)',
