@@ -39,6 +39,14 @@ const Appbar = () => {
 
 						<div
 							className='h-10 w-10 rounded-full bg-zinc-200 bg-cover bg-center shadow-inner dark:bg-zinc-800'
+							onClick={() => {
+								const darkMode = 'dark';
+								if (document.documentElement.classList.contains(darkMode)) {
+									document.documentElement.classList.remove(darkMode)
+								} else {
+									document.documentElement.classList.add(darkMode)
+								}
+							}}
 							style={{
 								backgroundImage:
 									'url(/images/favicon.png)',
