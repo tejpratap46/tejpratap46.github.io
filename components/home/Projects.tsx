@@ -61,7 +61,7 @@ const sideProjectList = [
 		name: 'Link Analytics',
 		description: 'Create a short link and track its analytics. Links can be a simple URL shortener with analytics or Pixel tracker for images.',
 		urls: [{
-			name: 'Open',
+			name: 'Shorten A Link',
 			url: 'https://link.tejpratapsingh.com/'
 		}]
 	},
