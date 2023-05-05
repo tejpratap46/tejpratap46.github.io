@@ -24,7 +24,7 @@ const Background = () => (
 				<li>- An EMR with capability to work completely offline and yet sync changes accross multiple devices.</li>
 				<li>- An e-commarse application.</li>
 				<li>- An appointment scheduling system.</li>
-				<li>- ... And multiple apps in Infotaintment system that we cannot discuss</li>
+				<li>- ... And multiple apps in Infotaintment system that we cannot discuss yet.</li>
 			</ul>
 		</div>
 	</Section>
