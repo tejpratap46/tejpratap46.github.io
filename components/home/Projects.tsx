@@ -83,7 +83,15 @@ const sideProjectList = [
 		name: 'Video Toolkit',
 		description: 'Simple video player with slow-motion capability to analyze every frame of video.',
 		urls: [{
-			name: 'Analyze',
+			name: 'Analyze Your Video',
+			url: 'https://video.tejpratapsingh.com/'
+		}]
+	},
+	{
+		name: 'Mockup Generator',
+		description: 'Your screenshots can do more.',
+		urls: [{
+			name: 'Build Your mockup',
 			url: 'https://video.tejpratapsingh.com/'
 		}]
 	}
@@ -131,7 +139,7 @@ const Projects = () => (
 				{
 					libProjectList.map((project) => {
 						return <div key={project.name} className='p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700'>
-							<a href='#'>
+							<a>
 								<h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>{project.name}</h5>
 							</a>
 							<p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>{project.description}</p>
@@ -156,7 +164,7 @@ const Projects = () => (
 				{
 					sideProjectList.map((project) => {
 						return <div key={project.name} className='p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700'>
-							<a href='#'>
+							<a>
 								<h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>{project.name}</h5>
 							</a>
 							<p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>{project.description}</p>
