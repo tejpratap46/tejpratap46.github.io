@@ -6,7 +6,7 @@ const Background = () => (
 			<h3 className='text-xl text-gray-400 dark:text-gray-600'><strong>1. ABOUT ME</strong></h3>
 			<br />
 			<p className='text-gray-900 dark:text-gray-200'>
-				Hi! I am a Software Developer from India with a background in Mobile Development, created multiple applications across domains like Medical and Car Infotainment.
+				Hi! I am a Software Developer from India with a background in Mobile Development, created multiple applications across domains like Medical and Automotive.
 			</p>
 			<br />
 			<p className='text-gray-900 dark:text-gray-200'>
