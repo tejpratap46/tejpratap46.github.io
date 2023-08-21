@@ -10,7 +10,7 @@ const Background = () => (
 			</p>
 			<br />
 			<p className='text-gray-900 dark:text-gray-200'>
-				Currently working with <span className='inline-flex items-center font-semibold text-blue-600 dark:text-blue-400 hover:underline'>Tata Elxsi</span> to build some NexGen Infotainment Systems using Android Automotive.
+				Currently working with <span className='inline-flex items-center font-semibold text-blue-600 dark:text-blue-400 hover:underline'>Tata Elxsi</span> to build some NexGen infotainment Systems using Android Automotive.
 			</p>
 			<br />
 			<p className='text-gray-900 dark:text-gray-200'>

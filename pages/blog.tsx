@@ -5,9 +5,6 @@ import BlogList from '@/components/blog/BlogList'
 
 const Blog = (root: Root) => {
 
-	const { feed } = root
-	const { items } = feed
-
 	return (
 		<Page>
 			<Section>
