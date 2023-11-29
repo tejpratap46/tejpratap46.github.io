@@ -9,7 +9,7 @@ const Hero = () => (
 					<Image className='mb-3 w-24 h-24 rounded-full shadow-lg grayscale hover:filter-none transition ease-in-out duration-500' src={'/images/avatar.png'} width={240} height={240} alt='Bonnie image' />
 					<h4 className='mb-1 mt-8 text-2xl font-medium text-gray-900 dark:text-white'>Tej Pratap Singh</h4>
 					<span className='text-sm text-gray-500 dark:text-gray-400'>Software Developer</span>
-					<span className='text-sm text-gray-800 dark:text-gray-200'>Specialist @Tata Elxsi</span>
+					<span className='text-sm text-gray-800 dark:text-gray-200'>Assistant Manager @RNTBCI</span>
 					<div className='flex mt-4 space-x-3 md:mt-6'>
 						<a href='mailto:tejpratap46@gmail.com'
 							target='_blank'
@@ -51,6 +51,12 @@ const Hero = () => (
 								<line x1="12" y1="16" x2="12" y2="11"></line>
 								<path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
 							</svg>
+						</a>
+						<a href='https://read.cv/tej'
+							target='_blank'
+							rel='noreferrer'
+							className='inline-flex items-center py-2 px-4 text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700'>
+							<svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-file-cv" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" /><path d="M13 11l1.5 6l1.5 -6" /></svg>
 						</a>
 						{/* <a href='https://blog.tejpratapsingh.com'
 							target='_blank'
