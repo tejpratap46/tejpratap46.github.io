@@ -92,7 +92,7 @@ const sideProjectList = [
 		description: 'Your screenshots can do more.',
 		urls: [{
 			name: 'Build Your mockup',
-			url: 'https://video.tejpratapsingh.com/'
+			url: 'https://mockup.tejpratapsingh.com/'
 		}]
 	}
 ]
