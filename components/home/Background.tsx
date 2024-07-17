@@ -6,11 +6,11 @@ const Background = () => (
 			<h3 className='text-xl text-gray-400 dark:text-gray-600'><strong>1. ABOUT ME</strong></h3>
 			<br />
 			<p className='text-gray-900 dark:text-gray-200'>
-				Hi! I am a Software Developer from India with a background in Mobile Development, created multiple applications across domains like Medical and Automotive.
+				Hi! I am a Software Developer from India with a background in Mobile Development, created multiple applications across domains like Automotive and Medical.
 			</p>
 			<br />
 			<p className='text-gray-900 dark:text-gray-200'>
-				Currently working with <span className='inline-flex items-center font-semibold text-blue-600 dark:text-blue-400 hover:underline'>Tata Elxsi</span> to build some NexGen infotainment Systems using Android Automotive.
+				Currently working with <span className='inline-flex items-center font-semibold text-blue-600 dark:text-blue-400 hover:underline'><abbr title="Renault Nissan Tech and Business Center India">RNTBCI</abbr></span> to build some NexGen infotainment Systems on top of Android Automotive.
 			</p>
 			<br />
 			<p className='text-gray-900 dark:text-gray-200'>
