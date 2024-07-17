@@ -5,15 +5,30 @@ const Work = () => (
 		<div className="px-6">
 			<h3 className='text-xl text-gray-400 dark:text-gray-600'><strong>3. WHERE I&apos;VE WORKED</strong></h3>
 			<ol className='relative border-l border-gray-200 dark:border-gray-700'>
+			<li className='mb-10 ml-4'>
+					<div className='absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700'></div>
+					<time className='mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'>Sept 2023 - Present</time>
+					<h3 className='text-lg font-semibold text-gray-700 dark:text-gray-300'>Renault Nissan Tech and Business Center India</h3>
+					<h5 className='text-xs font-semibold text-gray-600 dark:text-gray-400 mb-4'>Assistant Manager</h5>
+					<p className='mb-4 text-base font-normal text-gray-500 dark:text-gray-100'>
+						Building Automotive Infotainment Systems for Modern Cars with Android Automotive.
+						<br />
+						<span className='text-sm'>- Create, Build and Deploy Apps on Automotive AOSP images.</span>
+						<br />
+						<span className='text-sm'>- Worked on Park Assist and Drive assist HMI application.</span>
+					</p>
+				</li>
 				<li className='mb-10 ml-4'>
 					<div className='absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700'></div>
-					<time className='mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'>March 2022 - Present</time>
+					<time className='mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'>March 2022 - Sept 2023</time>
 					<h3 className='text-lg font-semibold text-gray-700 dark:text-gray-300'>Tata Elxsi</h3>
 					<h5 className='text-xs font-semibold text-gray-600 dark:text-gray-400 mb-4'>Specialist</h5>
 					<p className='mb-4 text-base font-normal text-gray-500 dark:text-gray-100'>
 						Building Automotive Infotainment Systems for Modern Cars with Android Automotive.
 						<br />
 						<span className='text-sm'>- Create, Build and Deploy Apps on Automotive AOSP images.</span>
+						<br />
+						<span className='text-sm'>- Worked on PopupManager, ThemeManager, CarHome and a bunch of EV HMI Applications.</span>
 					</p>
 				</li>
 				<li className='mb-10 ml-4'>

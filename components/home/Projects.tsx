@@ -77,6 +77,9 @@ const sideProjectList = [
 		}, {
 			name: 'Globe',
 			url: 'https://wake.tejpratapsingh.com/globe'
+		}, {
+			name: 'Vertical Clock',
+			url: 'https://wake.tejpratapsingh.com/vertical'
 		}]
 	},
 	{
