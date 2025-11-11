@@ -39,11 +39,11 @@ const libProjectList = [
 		}]
 	},
 	{
-		name: 'Google-Drive-REST-Android',
-		description: 'A simple wrapper around Google Drive REST API using OKHTTP.',
+		name: 'AndroidVideoMotion',
+		description: 'A Swiss army knife for editing and generating programmed videos, with AI features, all in device.',
 		urls: [{
 			name: 'Github',
-			url: 'https://github.com/tejpratap46/Google-Drive-REST-Android'
+			url: 'https://github.com/tejpratap46/AndroidVideoMotion'
 		}]
 	},
 	{
@@ -69,17 +69,8 @@ const sideProjectList = [
 		name: 'Wake You',
 		description: 'Keep your system awake, don\'t let it sleep with a simple Web App.',
 		urls: [{
-			name: 'Digital Clock',
+			name: 'Home',
 			url: 'https://wake.tejpratapsingh.com/'
-		}, {
-			name: 'Text Clock',
-			url: 'https://wake.tejpratapsingh.com/word'
-		}, {
-			name: 'Globe',
-			url: 'https://wake.tejpratapsingh.com/globe'
-		}, {
-			name: 'Vertical Clock',
-			url: 'https://wake.tejpratapsingh.com/vertical'
 		}]
 	},
 	{
