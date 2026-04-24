@@ -1,8 +1,20 @@
+import Head from 'next/head'
+
 const Resume = () => (
-	<main
-		className='mx-auto max-w-screen-md pt-8 pb-8 px-safe sm:pb-0'
-	>
-		<h1 className="text-4xl font-serif font-medium">Tej Pratap Singh</h1>
+	<>
+		<Head>
+			<title>Resume | Tej Pratap Singh</title>
+			<meta
+				name='description'
+				content='Resume of Tej Pratap Singh, software developer with experience in automotive and healthcare products.'
+			/>
+			<link rel='canonical' href='https://tejpratapsingh.com/resume' />
+			<meta name='robots' content='index, follow' />
+		</Head>
+		<main
+			className='mx-auto max-w-screen-md pt-8 pb-8 px-safe sm:pb-0'
+		>
+			<h1 className="text-4xl font-serif font-medium">Tej Pratap Singh</h1>
 		<h5 className="text-lg mt-3">Web and Mobile App Developer</h5>
 
 		<nav className="flex mt-2">
@@ -65,7 +77,8 @@ const Resume = () => (
 				<br />
 			</div>
 		</div>
-	</main>
+		</main>
+	</>
 )
 
 export default Resume

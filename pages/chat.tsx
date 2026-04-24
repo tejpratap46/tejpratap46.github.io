@@ -7,7 +7,11 @@ import Image from 'next/image'
 
 const Chat = () => {
 	return (
-		<Page>
+		<Page
+			title='Chat'
+			description='A conversational introduction to Tej Pratap Singh, experience, and projects.'
+			path='/chat'
+		>
 			<Section>
 				<ChatItem>Hey there.</ChatItem>
 				<ChatItem>

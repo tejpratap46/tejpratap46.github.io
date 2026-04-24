@@ -15,7 +15,7 @@ const Hero = () => (
 						priority
 						unoptimized
 					/>
-					<h4 className='mb-1 mt-8 text-2xl font-medium text-gray-900 dark:text-white'>Tej Pratap Singh</h4>
+					<h1 className='mb-1 mt-8 text-2xl font-medium text-gray-900 dark:text-white'>Tej Pratap Singh</h1>
 					<span className='text-sm text-gray-500 dark:text-gray-400'>Software Developer</span>
 					<span className='text-sm text-gray-800 dark:text-gray-200'>Assistant Manager @RNTBCI</span>
 					<div className='flex mt-4 space-x-3 md:mt-6'>

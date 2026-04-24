@@ -6,7 +6,11 @@ import BlogList from '@/components/blog/BlogList'
 const Blog = (root: Root) => {
 
 	return (
-		<Page>
+		<Page
+			title='Blog'
+			description='Blog posts by Tej Pratap Singh about software engineering, mobile development, and technology learnings.'
+			path='/blog'
+		>
 			<Section>
 				<h3 className='text-xl text-gray-400 dark:text-gray-600 capitalize'><strong>BLOG</strong></h3>
 				<p className='text-gray-700 dark:text-gray-400'>Here are some of thoughts and learnings:</p>

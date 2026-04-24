@@ -2,7 +2,6 @@ import Head from 'next/head'
 
 const Meta = () => (
 	<Head>
-		<title>Tej Pratap Singh</title>
 		<meta charSet='utf-8' />
 		<meta name='mobile-web-app-capable' content='yes' />
 		<meta name='apple-mobile-web-app-capable' content='yes' />
@@ -12,7 +11,10 @@ const Meta = () => (
 		/>
 		<meta name='apple-mobile-web-app-title' content='Tej Pratap Singh' />
 		<meta name='application-name' content='Tej Pratap Singh' />
-		<meta name='description' content='Mobile App Developer' />
+		<meta
+			name='viewport'
+			content='width=device-width, initial-scale=1, user-scalable=0, viewport-fit=cover'
+		/>
 		<meta
 			name='theme-color'
 			content='#f4f4f5'
@@ -22,10 +24,6 @@ const Meta = () => (
 			name='theme-color'
 			content='#18181b'
 			media='(prefers-color-scheme: dark)'
-		/>
-		<meta
-			name='viewport'
-			content='width=device-width, initial-scale=1, user-scalable=0, viewport-fit=cover'
 		/>
 		<link rel='apple-touch-icon' href='/images/icon-maskable-512.png' />
 		<link rel='icon' type='image/png' href='/images/favicon.png' />

@@ -2,7 +2,11 @@ import Page from '@/components/page'
 import Section from '@/components/section'
 
 const Work = () => (
-	<Page>
+	<Page
+		title='Contact'
+		description='Contact Tej Pratap Singh for software development opportunities and collaboration.'
+		path='/contact'
+	>
 		<Section>
 			<h2 className='text-xl font-semibold'>Contact</h2>
 
