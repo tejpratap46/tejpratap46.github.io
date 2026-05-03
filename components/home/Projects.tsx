@@ -91,6 +91,33 @@ const sideProjectList = [
 	}
 ]
 
+const aiExperimentsList = [
+	{
+		name: 'Video Analyser',
+		description: 'A browser native to analyse video completely offline and local. Features like slow video, create frame timeline and export current frame.',
+		urls: [{
+			name: 'Analyse a video',
+			url: 'https://video.tejpratapsingh.com/'
+		}]
+	},
+	{
+		name: 'Log Viewer',
+		description: 'View yout logs in browser, logs does not leave your device.',
+		urls: [{
+			name: 'Home',
+			url: 'https://log.tejpratapsingh.com/'
+		}]
+	},
+	{
+		name: 'Loan Calculator',
+		description: 'A advanced loan calculator for saving with custom dispursement, custom EMI, lumpsum payment.',
+		urls: [{
+			name: 'Analyze Your Video',
+			url: 'https://loan.tejpratapsingh.com/'
+		}]
+	}
+]
+
 const Projects = () => (
 	<Section>
 		<div className="px-6">
@@ -159,6 +186,33 @@ const Projects = () => (
 			<div className='grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4'>
 				{
 					sideProjectList.map((project) => {
+						return <div key={project.name} className='p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700'>
+							<a>
+								<h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>{project.name}</h5>
+							</a>
+							<p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>{project.description}</p>
+							<div style={{display: 'inline-grid'}}>
+							{
+								project.urls.map((item, index) => {
+									return <a key={index} href={item.url} target='_blank' rel='noreferrer' className='inline-flex items-center py-2 px-3 mx-2 my-1 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
+										<span>{item.name}</span>
+										<svg aria-hidden='true' className='ml-2 -mr-1 w-4 h-4' fill='currentColor' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path fillRule='evenodd' d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z' clipRule='evenodd'></path></svg>
+									</a>
+								})
+							}
+							</div>
+						</div>
+					})
+				}
+			</div>
+			<br />
+			<br />
+			<h4 className='text-l text-gray-400 dark:text-gray-600 capitalize'><strong>## AI EXPERIMENTS </strong></h4>
+			<br />
+			{/* AI Experiments */}
+			<div className='grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4'>
+				{
+					aiExperimentsList.map((project) => {
 						return <div key={project.name} className='p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700'>
 							<a>
 								<h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>{project.name}</h5>
