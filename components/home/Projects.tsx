@@ -104,7 +104,7 @@ const aiExperimentsList = [
 		name: 'Log Viewer',
 		description: 'View yout logs in browser, logs does not leave your device.',
 		urls: [{
-			name: 'Home',
+			name: 'Analyse some Logs',
 			url: 'https://log.tejpratapsingh.com/'
 		}]
 	},
@@ -112,8 +112,16 @@ const aiExperimentsList = [
 		name: 'Loan Calculator',
 		description: 'A advanced loan calculator for saving with custom dispursement, custom EMI, lumpsum payment.',
 		urls: [{
-			name: 'Analyze Your Video',
+			name: 'Know you loan',
 			url: 'https://loan.tejpratapsingh.com/'
+		}]
+	},
+	{
+		name: 'PDF Reader',
+		description: 'Use browser TTS to read aloud your pdf and any webpage.',
+		urls: [{
+			name: 'Read now',
+			url: 'https://pdf.tejpratapsingh.com/'
 		}]
 	}
 ]
