@@ -2,7 +2,11 @@ import Page from '@/components/page'
 import Section from '@/components/section'
 
 const Recipes = () => (
-	<Page>
+	<Page
+		title='Recipes'
+		description='Acknowledgements and resources used across Tej Pratap Singh personal website.'
+		path='/recipes'
+	>
 		<Section>
 			<h2 className='text-xl font-semibold'>Ingredients</h2>
 

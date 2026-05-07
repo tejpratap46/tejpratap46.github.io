@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Marquee from 'react-fast-marquee'
+import Head from 'next/head'
 
 import Page from '@/components/page'
 import Hero from '@/components/home/Hero'
@@ -14,7 +15,30 @@ const Index = () => {
 	return (
 		<div>
 			<Marquee className='dark:text-zinc-800' style={{ zIndex: -1, position: 'absolute', fontSize: '40em', width: '99vw', opacity: '0.2' }} gradient={false} speed={100}>TEJ PRATAP SINGH•</Marquee>
-			<Page>
+			<Page
+				title='Home'
+				description='Tej Pratap Singh is a software developer building mobile and web products in automotive and healthcare domains.'
+				path='/'
+			>
+				<Head>
+					<script
+						type='application/ld+json'
+						dangerouslySetInnerHTML={{
+							__html: JSON.stringify({
+								'@context': 'https://schema.org',
+								'@type': 'Person',
+								name: 'Tej Pratap Singh',
+								url: 'https://tejpratapsingh.com',
+								jobTitle: 'Software Developer',
+								sameAs: [
+									'https://github.com/tejpratap46',
+									'https://www.linkedin.com/in/tejpr',
+									'https://twitter.com/_tejpratap',
+								],
+							}),
+						}}
+					/>
+				</Head>
 				<Hero />
 				<br />
 				<Objective />
