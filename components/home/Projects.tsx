@@ -102,10 +102,18 @@ const aiExperimentsList = [
 	},
 	{
 		name: 'Log Viewer',
-		description: 'View yout logs in browser, logs does not leave your device.',
+		description: 'View your logs in browser, logs does not leave your device.',
 		urls: [{
 			name: 'Analyse some Logs',
 			url: 'https://log.tejpratapsingh.com/'
+		}]
+	},
+	{
+		name: 'Json Editor',
+		description: 'View and edit you json in a mac file browser ui.',
+		urls: [{
+			name: 'Edit you Json',
+			url: 'https://json.tejpratapsingh.com/'
 		}]
 	},
 	{
