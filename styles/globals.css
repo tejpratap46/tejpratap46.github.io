@@ -4,13 +4,48 @@
 
 body {
 	@apply min-h-screen select-none bg-zinc-50 text-zinc-900 antialiased p-safe dark:bg-zinc-900 dark:text-zinc-50;
-
-	/* PWA enhancements */
 	-webkit-overflow-scrolling: touch;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
 }
 
 * {
-	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+@keyframes float {
+	0%,
+	100% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-16px);
+	}
+}
+
+.animate-float {
+	animation: float 6s ease-in-out infinite;
+}
+
+.reveal {
+	opacity: 0;
+	transform: translateY(36px) scale(0.98);
+	transition: opacity 700ms ease, transform 700ms ease;
+}
+
+.reveal.revealed {
+	opacity: 1;
+	transform: translateY(0) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.animate-float,
+	.animate-pulse,
+	.reveal,
+	.reveal.revealed {
+		animation: none !important;
+		transition: none !important;
+		transform: none !important;
+		opacity: 1 !important;
+	}
 }
